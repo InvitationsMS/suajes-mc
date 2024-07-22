@@ -6,11 +6,11 @@ export interface ServicesProps {
   children?: React.ReactNode
 }
 
-const Services: React.FC<ServicesProps> = ({ children }) => {
+const Services: React.FC<ServicesProps> = () => {
 
   return (
     <div className="dse-services">
-      {children}
+      <h1>ewe</h1>
     </div>
   )
 }

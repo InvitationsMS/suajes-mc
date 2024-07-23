@@ -2,6 +2,7 @@ import React from 'react'
 
 import './Services.scss'
 
+
 export interface ServicesProps {
   children?: React.ReactNode
 }
@@ -9,22 +10,31 @@ export interface ServicesProps {
 const Services: React.FC<ServicesProps> = () => {
 
   return (
-    <div className='services-container'>      
-    <h1>¿Qué servicios ofrecemos?</h1>
+    <div className='services-container'>
+      <h1>¿Qué servicios ofrecemos?</h1>
+
       <div className='cards-container'>
+
         <div className='card'>
+          <img src="/images/laser-machine.png" alt="Logo" width="100"/>
           <h2>Suajes en calado láser</h2>
           <p>Máquinas láser de alta precisión para quemado de madera plana y rotativa.</p>
         </div>
+
         <div className='card'>
+          <img src="/images/cutting-saw.png" alt="Logo" width="100" />
           <h2>Suajes en calado manual</h2>
-          <p>Máquinas láser de alta precisión para quemado de madera plana y rotativa.</p>
+          <p>14 años de experiencia con Suajes en calado manual, planos o rotativos.</p>
         </div>
+
         <div className='card'>
+          <img src="/images/cutting-saw2.png" alt="Logo" width="100"/>
           <h2>Renavajeo y reparación</h2>
-          <p>Máquinas láser de alta precisión para quemado de madera plana y rotativa.</p>
+          <p>Servicios de reparación y renavajeo de Suajes, scored, navaja y perforado.</p>
         </div>
+
       </div>
+      
     </div>
   )
 }

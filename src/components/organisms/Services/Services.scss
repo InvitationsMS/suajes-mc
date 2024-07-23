@@ -1,5 +1,10 @@
 .services-container {
+  font-family: "Montserrat Alternates", sans-serif;
   padding: 50px;
+}
+
+.services-container h1 {
+  color: #2c5975;
 }
 
 .cards-container {
@@ -21,8 +26,14 @@
   margin-right: 0;
 }
 
-.card h2{
-    font-family: 'Montserrat Alternates', sans-serif; 
-    font-weight: 600;
-    color: #42B7CA;
+.card h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #42b7ca;
+  font-weight: 600;
+}
+
+.card p {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #999999;
+  font-weight: 600;
 }

@@ -1,1 +1,25 @@
-.dse-information {}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px; /* Espacio entre las filas */
+}
+
+.text-left {
+  flex: 1;
+  text-align: left;
+}
+
+.image-right {
+  flex: 1;
+  text-align: right;
+}
+
+.image-right img,
+.text-left img {
+  max-width: 100%;
+  height: auto;
+}

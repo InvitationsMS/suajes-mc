@@ -1,0 +1,62 @@
+/* ContactCard.scss */
+.contact-card {
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px; /* Limita el ancho máximo de la tarjeta */
+  position: relative; /* Para posicionar la línea azul interna */
+}
+
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  border: 1px solid #00bfff; /* Línea azul interna */
+  border-radius: 8px;
+}
+
+.contact-card .icon {
+  font-size: 40px;
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+.contact-card .contact-info h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.contact-card .contact-info p {
+  margin: 5px 0;
+  color: #00bfff;
+}
+
+.contact-card .email,
+.contact-card .phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #ddd; /* Borde gris */
+}
+
+.contact-card .email i,
+.contact-card .phone i {
+  margin-right: 10px;
+  color: #777;
+}
+
+.contact-card .email span,
+.contact-card .phone span {
+  color: #555;
+}

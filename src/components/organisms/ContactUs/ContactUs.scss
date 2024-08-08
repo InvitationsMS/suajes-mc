@@ -1,0 +1,19 @@
+.contact-page {
+  text-align: center;
+  padding: 40px;
+  background-image: url('/images/bg-contact.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-page h2 {
+  margin-bottom: 40px;
+  font-size: 36px;
+  color: #fff;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

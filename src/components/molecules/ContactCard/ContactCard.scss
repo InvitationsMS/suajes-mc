@@ -1,4 +1,10 @@
 /* ContactCard.scss */
+
+.services-container {
+  font-family: "Montserrat Alternates", sans-serif;
+  padding: 50px;
+}
+
 .contact-card {
   border-radius: 8px;
   padding: 20px;
@@ -11,7 +17,7 @@
 }
 
 .contact-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 20px;
   bottom: 20px;
@@ -21,21 +27,20 @@
   border-radius: 8px;
 }
 
-.contact-card .icon {
-  font-size: 40px;
-  color: #00bfff;
-  margin-bottom: 10px;
-}
+// .contact-card .icon {
+// }
 
 .contact-card .contact-info h3 {
-  margin: 10px 0;
-  font-size: 1.2em;
-  color: #333;
+  font-family: "Montserrat", sans-serif;
+  color: #2c5975;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
 }
 
 .contact-card .contact-info p {
-  margin: 5px 0;
-  color: #00bfff;
+  margin: 0;
+  color: rgba(44, 89, 117, 0.8)
 }
 
 .contact-card .email,
@@ -43,20 +48,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f7f7f7;
+  background: rgba(0, 0, 0, 0.04); 
   border-radius: 5px;
   padding: 5px;
   margin: 5px 0;
-  border: 1px solid #ddd; /* Borde gris */
-}
-
-.contact-card .email i,
-.contact-card .phone i {
-  margin-right: 10px;
-  color: #777;
 }
 
 .contact-card .email span,
 .contact-card .phone span {
-  color: #555;
+  color: rgba(44, 89, 117, 0.8)
 }

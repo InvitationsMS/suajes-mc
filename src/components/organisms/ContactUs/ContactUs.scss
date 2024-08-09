@@ -1,15 +1,26 @@
 .contact-page {
   text-align: center;
   padding: 40px;
-  background-image: url('/images/bg-contact.png');
+  background-image: 
+    linear-gradient(to bottom right, #3D6D8A, #3D6D8A),
+    linear-gradient(
+      to bottom right, 
+      rgba(44, 174, 182, 0.63) 28%, 
+      rgba(44, 174, 182, 1) 100%
+    ),
+    url('/images/bg-contact.png');
   background-size: cover;
   background-position: center;
+  background-blend-mode: multiply, color, normal;
 }
 
 .contact-page h2 {
-  margin-bottom: 40px;
-  font-size: 36px;
-  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; 
+  font-size: 45px;
+  letter-spacing: 0.26em;
+  text-align: center;
+  color: white;
 }
 
 .contact-cards {

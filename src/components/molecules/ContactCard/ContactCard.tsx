@@ -13,25 +13,27 @@ interface ContactCardProps {
 const ContactCard: React.FC<ContactCardProps> = ({ name, department, email, phone }) => {
   return (
     <div className="contact-card">
+      <div className='contact-card-interior'>
 
         <BusinessCenterOutlinedIcon
           sx={{ color: '#2C5975', fontSize: '75px' }}
         />
 
-      <div className="contact-info">
-        <h3>{name}</h3>
-        <p>{department}</p>
+        <div className="contact-info">
+          <h3>{name}</h3>
+          <p>{department}</p>
 
-        <div className="email">
-          <i className="fa fa-envelope"></i> 
-          <span>{email}</span>
+          <div className="email">
+            <i className="fa fa-envelope"></i>
+            <span>{email}</span>
+          </div>
+
+          <div className="phone">
+            <i className="fa fa-phone"></i>
+            <span>{phone}</span>
+          </div>
+
         </div>
-
-        <div className="phone">
-          <i className="fa fa-phone"></i> 
-          <span>{phone}</span>
-        </div>
-
       </div>
     </div>
   );

@@ -10,7 +10,6 @@ const NavBar: React.FC<NavBarProps> = () => {
   return (
     <nav className="navbar">
     <div className="navbar-logo">
-      {/* Coloca aquí tu logo */}
       <h1>Logo</h1>
     </div>
     <ul className="navbar-links">

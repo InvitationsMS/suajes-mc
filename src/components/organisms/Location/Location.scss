@@ -1,1 +1,37 @@
-.dse-location {}
+.location-container {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr; 
+    min-height: 450px;
+}
+    
+.address-section {
+    background-color: #2C5975;
+    padding: 10% 5% 5% 10%;
+    color: white;
+}
+
+.location-text {
+    font-family: "Montserrat Alternates", sans-serif;
+    color: white;
+    text-align: start;
+    font-size: 18px;
+}
+
+.div2-location {
+    background-color: rgb(194, 194, 194);
+}
+
+.btn {
+    background-color: #2DAEB7;
+    color: white; 
+    padding: 6px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+    cursor: pointer; 
+}
+
+.btn:hover {
+    background-color: #259ba3;
+}

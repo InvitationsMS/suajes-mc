@@ -10,7 +10,7 @@ export interface ServicesProps {
 const Services: React.FC<ServicesProps> = () => {
 
   return (
-    <div className='services-container'>
+    <div className='services-container' id='services'>
       <h1>¿Qué servicios ofrecemos?</h1>
 
       <div className='cards-container'>

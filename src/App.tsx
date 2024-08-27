@@ -1,7 +1,7 @@
 import './App.css'
 
 import NavBar from './components/organisms/NavBar'
-
+import Hero from './components/organisms/Hero'
 import Gallery from './components/organisms/Gallery'
 import Services from './components/organisms/Services'
 import Information from './components/organisms/Information'
@@ -13,7 +13,8 @@ function App() {
   return (
     <>
       <NavBar />
-      <Gallery />
+      <Hero />
+      {/* <Gallery /> */}
       <Services />
       <Information />
       <Location />

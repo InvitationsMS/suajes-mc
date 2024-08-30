@@ -14,7 +14,7 @@ function App() {
     <>
       <NavBar />
       <Hero />
-      {/* <Gallery /> */}
+      <Gallery />
       <Services />
       <Information />
       <Location />

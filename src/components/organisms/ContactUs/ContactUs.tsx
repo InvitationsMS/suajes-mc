@@ -32,7 +32,7 @@ const contacts: Contact[] = [
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="contact-page">
+    <div className="contact-page" id='contact'>
       <h2>CONTÁCTANOS</h2>
       <div className="contact-cards">
         {contacts.map((contact, index) => (

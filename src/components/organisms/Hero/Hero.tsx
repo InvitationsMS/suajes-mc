@@ -8,7 +8,7 @@ export interface HeroProps {
 const Hero: React.FC<HeroProps> = () => {
 
   return (
-    <section className="hero-container">
+    <section className="hero-container" id='hero'>
 
     <div className="hero-content">
       <h1>Dados de corte de alta calidad sobre diseño</h1>

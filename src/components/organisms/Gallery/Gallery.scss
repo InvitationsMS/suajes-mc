@@ -1,36 +1,41 @@
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-}
-    
-.div1 {
-    grid-column: span 2 / span 2;
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
 }
 
-.div2 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 3;
+.thumbnails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.div3 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 2;
+.thumbnail {
+    width: 100%;
+    height: 100px; 
+    min-width: 500px;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: 0.5; 
+    transition: opacity 0.3s;
 }
 
-.div4 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 4;
+.thumbnail.active {
+    opacity: 1; 
 }
 
-.div5 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 3;
-    grid-row-start: 1;
+.expanded-image-container {
+    flex: 3;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-        
+
+.expanded-image {
+    width: 100%;
+    object-fit: cover;
+    height: calc(100px * 4 + 10px * 3); 
+    max-height: calc(100px * 4 + 10px * 3);
+}

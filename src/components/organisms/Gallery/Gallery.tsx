@@ -1,24 +1,59 @@
-import React from 'react'
+import { useState, useEffect } from "react";
+import "./Gallery.scss";
 
-import './Gallery.scss'
+const images = [
+  "/images/gallery/1.jpg",
+  "/images/gallery/2.jpg",
+  "/images/gallery/3.jpg",
+  "/images/gallery/4.jpg",
+];
 
-export interface GalleryProps {
-  children?: React.ReactNode
-}
+const Gallery = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [autoPlay, setAutoPlay] = useState(true);
 
-const Gallery: React.FC<GalleryProps> = () => {
+  useEffect(() => {
+    if (autoPlay) {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 5000); 
+
+      return () => clearInterval(interval); 
+    }
+  }, [autoPlay]);
+
+  const handleThumbnailClick = (index:any) => {
+    setCurrentImageIndex(index);
+  };
+
+  const handleImageClick = () => {
+    // Aquí puedes implementar la funcionalidad para expandir la imagen
+    console.log("Imagen expandida");
+  };
 
   return (
-
-    <div className="parent">
-      <div className="div1">1</div>
-      <div className="div2">2</div>
-      <div className="div3">3</div>
-      <div className="div4">4</div>
-      <div className="div5">5</div>
+    <div className="gallery-container">
+      <div className="thumbnails">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Thumbnail ${index + 1}`}
+            onClick={() => handleThumbnailClick(index)}
+            className={`thumbnail ${currentImageIndex === index ? "active" : ""}`}
+          />
+        ))}
+      </div>
+      <div className="expanded-image-container">
+        <img
+          src={images[currentImageIndex]}
+          alt={`Expanded ${currentImageIndex + 1}`}
+          onClick={handleImageClick}
+          className="expanded-image"
+        />
+      </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default Gallery
+export default Gallery;

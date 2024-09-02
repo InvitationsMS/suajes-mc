@@ -1,10 +1,11 @@
 .services-container {
   font-family: "Montserrat Alternates", sans-serif;
-  padding: 50px;
+  padding: 0 85px 0 85px;
 }
 
 .services-container h1 {
   color: #2c5975;
+  font-size: 2.5rem;
 }
 
 .cards-container {
@@ -12,28 +13,32 @@
   justify-content: space-between;
 }
 
-.card {
-  border: 2px solid #42b7ca;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
-}
-
-.card {
-  margin-right: 30px;
-}
-
 .cards-container .card:last-child {
   margin-right: 0;
 }
 
+.card {
+  padding: 30px 40px 30px 40px;
+  margin-right: 50px;
+  border: 2px solid #42b7ca;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px; 
+}
+
 .card h2 {
+  min-height: 60px;
   font-family: "Montserrat Alternates", sans-serif;
   color: #42b7ca;
   font-weight: 600;
+  font-size: 1.6rem;
 }
 
 .card p {
   font-family: "Montserrat Alternates", sans-serif;
   color: #999999;
   font-weight: 600;
+  font-size: 1.2rem;
 }
+
+
+

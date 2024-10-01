@@ -1,28 +1,34 @@
 .services-container {
   font-family: "Montserrat Alternates", sans-serif;
-  padding: 0 85px 0 85px;
 }
 
 .services-container h1 {
   color: #2c5975;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .cards-container {
   display: flex;
-  justify-content: space-between;
-}
-
-.cards-container .card:last-child {
-  margin-right: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.8rem;
 }
 
 .card {
-  padding: 30px 40px 30px 40px;
-  margin-right: 50px;
   border: 2px solid #42b7ca;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 3px; 
+  border-radius: 5px;
+  padding: 20px;
+  flex-basis: 20%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
 }
 
 .card h2 {
@@ -30,7 +36,8 @@
   font-family: "Montserrat Alternates", sans-serif;
   color: #42b7ca;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .card p {
@@ -40,5 +47,52 @@
   font-size: 1.2rem;
 }
 
+.card:hover {
+  transform: scale(1.05);
+}
 
+@media (max-width: 1440px) {
+  .card {
+    flex-basis: 25%;
+    max-width: 250px;
+  }
+}
 
+@media (max-width: 1024px) {
+  .card {
+    flex-basis: 33.33%;
+    max-width: 220px;
+  }
+
+  .cards-container {
+    gap: 1.5rem;
+  }
+
+  .card h2 {
+    font-size: 1.8rem;
+  }
+
+  .card p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .services-container h1 {
+    font-size: 2rem;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+}

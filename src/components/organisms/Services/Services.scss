@@ -1,11 +1,12 @@
 .services-container {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .services-container h1 {
   color: #2c5975;
   font-size: 3rem;
   text-align: center;
+  padding-bottom: 3%;
 }
 
 .cards-container {
@@ -13,6 +14,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 3.8rem;
+  padding-bottom: 5%;
+
 }
 
 .card {
@@ -32,24 +35,19 @@
 }
 
 .card h2 {
-  min-height: 60px;
-  font-family: "Montserrat Alternates", sans-serif;
-  color: #42b7ca;
   font-weight: 600;
+  min-height: 60px;
+  color: #42b7ca;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .card p {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
   color: #999999;
-  font-weight: 600;
   font-size: 1.2rem;
 }
 
-.card:hover {
-  transform: scale(1.05);
-}
 
 @media (max-width: 1440px) {
   .card {

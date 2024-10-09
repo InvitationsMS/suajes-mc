@@ -27,7 +27,6 @@ const Gallery = () => {
   };
 
   const handleImageClick = () => {
-    // Aquí puedes implementar la funcionalidad para expandir la imagen
     console.log("Imagen expandida");
   };
 

@@ -11,30 +11,27 @@ export interface LocationProps {
 const Location: React.FC<LocationProps> = () => {
 
   return (
-
     <div className="location-container">
 
       <div className="address-section">
-        <FmdGoodOutlinedIcon
-          sx={{ fontSize: '80px' }}
-        />
-
-        <div className='location-text'>
-        <p>Calle Cachanilla #1821</p>
-        <p>Colonia Herrera</p>
-        <p>Tijuana, Baja California</p>
+        <div className='location-icon'>
+          <FmdGoodOutlinedIcon
+            sx={{ fontSize: '80px' }}
+          />
         </div>
-
+        <div className='location-text'>
+          <p className="p-primary">Calle Cachanilla #1821</p>
+          <p className="p-secondary">Colonia Herrera</p>
+          <p className="p-tertiary">Tijuana, Baja California</p>
+        </div>
         <button className='btn'>Ver en mapa</button>
-
       </div>
 
-      {/* mapa */}
-      <div className="div2-location">
+      <div className="map">
+        Espacio para mapa
       </div>
 
     </div>
-
   )
 }
 

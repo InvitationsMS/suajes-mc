@@ -1,48 +1,71 @@
-.suaje-section {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  padding: 50px;
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1200px;
 }
 
-.suaje-item {
+.info-container {
+  padding-top: 50px;
+  position: relative;
+  padding-bottom: 2%;
+}
+
+.info-container:before {
+  display: block;
+  width: 100%;
+  height: 350px;
+  content: "";
+  // background-image: url('/images/bg-contact.png');
+  background-color: #244E7B;
+  background-position: top center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.info__list {
+  padding: 0 2%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: space-between;
 }
 
-.suaje-item:nth-child(even) .suaje-image {
-  order: -1;
+.info-card {
+  flex: 1 1 calc(50% - 20px);
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #320A28;
+  color: #FDFDFF;
+
+  @media (max-width: 768px) {
+    flex: 1 1 100%;
+  }
 }
 
-.suaje-image {
-  width: 70%;
-  height: 180px;
-  object-fit: cover;
+.info__content {
+  text-align: center;
 }
 
-.suaje-content {
-  width: 55%;
+.info-text {
+  padding: 20px;
+  font-size: 16px;
 }
 
-.suaje-content h2 {
-  text-align: start;
-  margin-bottom: 10px;
-  font-size: 1.8rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #2C5975;
+.info-text p {
+  font-size: 14px;
 }
 
-.suaje-content p {
-  margin: 0;
-  line-height: 1.5;
-  text-align: left;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 300;
-  font-style: normal;
-  color: #2C5975;
+.info__img {
+  width: 100%; 
+  height: auto;
+  max-height: 300px; 
+  object-fit: cover; 
+}
+
+.info-container h1{
+  font-size: 40px;
+  color: #FDFDFF;
 }

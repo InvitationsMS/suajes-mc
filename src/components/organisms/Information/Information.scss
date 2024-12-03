@@ -5,9 +5,9 @@
 }
 
 .info-container {
-  padding-top: 50px;
+  padding-top: 20px;
   position: relative;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
 }
 
 .info-container:before {
@@ -15,8 +15,7 @@
   width: 100%;
   height: 350px;
   content: "";
-  // background-image: url('/images/bg-contact.png');
-  background-color: #244E7B;
+  background-color: #320A28;
   background-position: top center;
   background-size: cover;
   position: absolute;
@@ -24,48 +23,57 @@
   left: 0;
   z-index: -1;
 }
-
 .info__list {
-  padding: 0 2%;
+  padding: 0; // Reducir el padding general
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
+  gap: 15px; // Reducir la separación entre tarjetas
+  justify-content: center; // Centrar las tarjetas horizontalmente
 }
 
 .info-card {
-  flex: 1 1 calc(50% - 20px);
+  flex: 0 1 45%; // Reducir el ancho relativo
+  max-width: 450px; // Limitar el tamaño máximo de las tarjetas
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 4px 20px -3px rgba(37, 4, 72, 0.47);
   background-color: #320A28;
   color: #FDFDFF;
 
   @media (max-width: 768px) {
-    flex: 1 1 100%;
+    flex: 0 1 90%; // Ocupan más ancho en pantallas pequeñas
   }
 }
 
-.info__content {
-  text-align: center;
-}
+.info-card {
+  opacity: 0;
+  transform: translateY(-20px); 
+  transition: opacity 0.6s ease, transform 0.6s ease;
 
-.info-text {
-  padding: 20px;
-  font-size: 16px;
-}
-
-.info-text p {
-  font-size: 14px;
+  &.animate {
+    opacity: 1;
+    transform: translateY(0); 
+  }
 }
 
 .info__img {
-  width: 100%; 
+  width: 100%;
   height: auto;
-  max-height: 300px; 
-  object-fit: cover; 
+  max-height: 300px; // Reducir el tamaño máximo de las imágenes
+  object-fit: cover;
 }
 
-.info-container h1{
-  font-size: 40px;
+.info-text {
+  padding: 10px 25px; // Reducir padding interno de la tarjeta
+  font-size: 14px; // Tamaño más pequeño para el texto
+  text-align: left; 
+}
+
+.info-text p {
+  font-size: 12px;
+}
+
+.info-container h1 {
+  font-size: 36px; // Ajustar el tamaño del encabezado si lo deseas
   color: #FDFDFF;
+  text-align: center; // Asegurar que el título esté centrado
 }

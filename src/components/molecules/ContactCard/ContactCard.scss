@@ -1,78 +1,78 @@
-// .contact-card {
-//   border-radius: 8px;
-//   padding: 24px;
-//   text-align: center;
-//   background-color: #fff;
-//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-//   position: relative;
-//   width: 50%;
-//   max-height: 273px;
-// }
-
-// .contact-card-interior {
-//   border: 1px solid #00bfff; 
-//   border-radius: 8px;
-//   padding: 0px 20px 0px 20px;
-// }
-
-// .contact-card .contact-info h3 {
-//   font-family: "Montserrat", sans-serif;
-//   color: #2c5975;
-//   font-weight: bold;
-//   font-size: 1em;
-//   margin: 0;
-// }
-
-// .contact-card .contact-info p {
-//   margin: 0;
-//   color: rgba(44, 89, 117, 0.8)
-// }
-
-// .contact-card .email,
-// .contact-card .phone {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   background: rgba(0, 0, 0, 0.04); 
-//   border-radius: 5px;
-//   padding: 5px;
-//   margin: 5px 0;
-// }
-
-// .contact-card .email span,
-// .contact-card .phone span {
-//   color: rgba(44, 89, 117, 0.8)
-// }
-
 .contact-cards {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Para que las tarjetas se muevan a la siguiente línea si son demasiadas */
+  flex-wrap: wrap;
   gap: 45px;
 }
 
 .contact-card {
   border-radius: 8px;
-  padding: 24px;
+  padding: 15px;
   text-align: center;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
-  flex-basis: 30%; /* Distribuye las tarjetas de manera proporcional */
-  max-width: 300px; /* Limita el tamaño máximo */
-  min-width: 250px; /* Asegura un tamaño mínimo */
+  flex-basis: 30%;
+  max-width: 300px;
+  min-width: 250px;
   box-sizing: border-box;
 }
 
-/* Ajustes responsivos */
+.contact-card-interior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #244e7b;
+}
+
+.header span {
+  font-size: 0.875rem;
+  color: rgb(44, 89, 117, 80);
+}
+
+.contact-info p {
+  background-color: #f0f1f1;
+  border-radius: 16px;
+  margin: 5px 0;
+  display: inline-block;
+  color: rgb(44, 89, 117, 80);
+  font-size: 0.875rem;
+  width: auto;
+  text-align: center;
+  padding: 2px 10px;
+}
+
+.contact-card-interior {
+  border-radius: 8px;
+  border: 1px solid #2daeb7;
+  padding: 8px 0 0 0;
+}
+
 @media (max-width: 768px) {
   .contact-card {
-    flex-basis: 45%; /* Aumenta el tamaño en pantallas más pequeñas */
+    flex-basis: 45%;
   }
 }
 
 @media (max-width: 480px) {
   .contact-card {
-    flex-basis: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    flex-basis: 100%;
   }
 }

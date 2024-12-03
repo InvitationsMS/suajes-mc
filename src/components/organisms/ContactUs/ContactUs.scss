@@ -1,14 +1,7 @@
 .contact-page {
   text-align: center;
-  padding: 80px;
-  background-image: 
-    linear-gradient(to bottom right, #3D6D8A, #3D6D8A),
-    linear-gradient(
-      to bottom right, 
-      rgba(44, 174, 182, 0.63) 28%, 
-      rgba(44, 174, 182, 1) 100%
-    ),
-    url('/images/bg-contact.png');
+  padding: 80px 20px;
+  background-image: url('/images/bg-contact.png');
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply, color, normal;
@@ -16,7 +9,7 @@
 
 .contact-page h2 {
   font-family: 'Inter', sans-serif;
-  font-weight: 300; 
+  font-weight: 300;
   font-size: 50px;
   letter-spacing: 0.28em;
   text-align: center;
@@ -26,5 +19,35 @@
 .contact-cards {
   display: flex;
   justify-content: center;
-  gap: 45px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 60px 10px;
+  }
+
+  .contact-page h2 {
+    font-size: 36px;
+  }
+
+  .contact-cards {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 40px 10px;
+  }
+
+  .contact-page h2 {
+    font-size: 28px;
+    letter-spacing: 0.15em;
+  }
+
+  .contact-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
 }

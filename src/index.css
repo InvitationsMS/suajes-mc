@@ -11,7 +11,7 @@ body {
 }
 
 .btn {
-  background-color: #550C18;
+  background-color: #511730;
   color: white; 
   padding: 6px 20px; 
   border: none; 
@@ -25,5 +25,5 @@ body {
 }
 
 .btn:hover {
-  background-color: #259ba3;
+  background-color: #320a28;
 }

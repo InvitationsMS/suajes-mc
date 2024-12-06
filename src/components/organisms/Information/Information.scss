@@ -15,7 +15,12 @@
   width: 100%;
   height: 350px;
   content: "";
-  background-color: #320A28;
+  background-color: #244e7b;
+
+
+  background-image: url('/images/bg-info.png');
+
+
   background-position: top center;
   background-size: cover;
   position: absolute;
@@ -36,7 +41,7 @@
   max-width: 450px; // Limitar el tamaño máximo de las tarjetas
   overflow: hidden;
   box-shadow: 6px 4px 20px -3px rgba(37, 4, 72, 0.47);
-  background-color: #320A28;
+  background-color: #244e7b;
   color: #FDFDFF;
 
   @media (max-width: 768px) {
@@ -76,4 +81,9 @@
   font-size: 36px; // Ajustar el tamaño del encabezado si lo deseas
   color: #FDFDFF;
   text-align: center; // Asegurar que el título esté centrado
+}
+
+.info-container h2 {
+  color: #fdfdffb3;
+  text-align: center; 
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './Location.scss'
+import texts from '../../../constants/texts';
 
 import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 
@@ -12,19 +13,25 @@ const Location: React.FC<LocationProps> = () => {
 
   return (
     <div className="location-container">
-
       <div className="address-section">
         <div className='location-icon'>
           <FmdGoodOutlinedIcon
-            sx={{ fontSize: '80px' }}
+            sx={{ fontSize: '60px' }}
           />
         </div>
         <div className='location-text'>
-          <p className="p-primary">Calle Cachanilla #1821</p>
-          <p className="p-secondary">Colonia Herrera</p>
-          <p className="p-tertiary">Tijuana, Baja California</p>
+          <p className="p-primary">{texts.location.street}</p>
+          <p className="p-secondary">{texts.location.neighborhood}</p>
+          <p className="p-tertiary">{texts.location.state}</p>
         </div>
-        <button className='btn'>Ver en mapa</button>
+        <a
+          href={texts.location.mapUrl}
+          className="btn-location"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {texts.location.button}
+        </a>
       </div>
 
       <div className="map">

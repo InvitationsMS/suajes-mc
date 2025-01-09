@@ -31,7 +31,7 @@ const texts = {
     state: "Tijuana, Baja California",
     CP: "CP 22645",
     mapUrl: "https://maps.app.goo.gl/kGf95KVWaCZ7Yt797",
-    button: "Ver en mapa"
+    button: "Ver en Maps"
   },
   footer: {
     copyright: "© 2024 SuajesMC. Todos los derechos reservados.",

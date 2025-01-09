@@ -4,20 +4,25 @@ import L from 'leaflet';
 interface MapProps {
   latitude: number;
   longitude: number;
-  zoom: number;
+  zoom?: number;
 }
 
-const Map: React.FC<MapProps> = ({ latitude, longitude, zoom }) => {
+const Map: React.FC<MapProps> = ({ latitude, longitude, zoom = 16 }) => { 
   useEffect(() => {
-    const map = L.map('map').setView([latitude, longitude], zoom);
+    const map = L.map('map', { scrollWheelZoom: false, zoomControl: false }).setView([latitude, longitude], zoom); 
 
+    // Map tile
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
+      maxZoom: 20, 
     }).addTo(map);
 
+    // Pop up
     L.marker([latitude, longitude]).addTo(map)
-      .bindPopup("<b>Hello world!</b><br>I am a popup.")
+      .bindPopup('<b>Suajes M.C.</b><br>I am a popup.')
       .openPopup();
+
+    // Zoom control
+    L.control.zoom({ position: 'topright' }).addTo(map);
 
     return () => {
       map.remove();

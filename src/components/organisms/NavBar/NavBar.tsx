@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './NavBar.scss';
+import texts from '../../../constants/texts';
 
 export interface NavBarProps {
   children?: React.ReactNode;
@@ -7,7 +8,7 @@ export interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState<string>(''); // Estado para el enlace activo
+  const [activeLink, setActiveLink] = useState<string>(''); 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -26,10 +27,10 @@ const NavBar: React.FC<NavBarProps> = () => {
           <div className={`line ${isOpen ? 'open' : ''}`}></div>
         </div>
         <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
-          <li><a href="#hero" onClick={toggleMenu} className={`nav-link ${activeLink === 'hero' ? 'active' : ''}`}>INICIO</a></li>
-          <li><a href="#services" onClick={toggleMenu} className={`nav-link ${activeLink === 'services' ? 'active' : ''}`}>SERVICIOS</a></li>
-          <li><a href="#about" onClick={toggleMenu} className={`nav-link ${activeLink === 'about' ? 'active' : ''}`}>NOSOTROS</a></li>
-          <li><a href="#contact" onClick={toggleMenu} className={`nav-link ${activeLink === 'contact' ? 'active' : ''}`}>CONTACTO</a></li>
+          <li><a href="#hero" onClick={toggleMenu} className={`nav-link ${activeLink === 'hero' ? 'active' : ''}`}>{texts.navbar.home}</a></li>
+          <li><a href="#services" onClick={toggleMenu} className={`nav-link ${activeLink === 'services' ? 'active' : ''}`}>{texts.navbar.services}</a></li>
+          <li><a href="#about" onClick={toggleMenu} className={`nav-link ${activeLink === 'about' ? 'active' : ''}`}>{texts.navbar.about}</a></li>
+          <li><a href="#contact" onClick={toggleMenu} className={`nav-link ${activeLink === 'contact' ? 'active' : ''}`}>{texts.navbar.contact}</a></li>
         </ul>
       </nav>
       {isOpen && <div className="overlay" onClick={toggleMenu}></div>}

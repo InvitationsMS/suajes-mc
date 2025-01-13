@@ -1,7 +1,14 @@
 const texts = {
+  //#region NAVBAR 
   navbar: {
-
+    home: "INICIO",
+    services: "SERVICIOS",
+    about: "NOSOTROS",
+    contact: "CONTACTO"
   },
+  //#endregion
+
+  //#region HERO 
   hero: {
     title: "Dados de corte de alta calidad sobre diseño",
     description: `Fabricamos dados de corte sobre diseño, realizados con navaja de acero de alta tecnología
@@ -9,6 +16,9 @@ const texts = {
                     Nuestra variedad está compuesta de dos tipos de corte, plano y rotativo.`,
     button: "Ver servicios",
   },
+  //#endregion
+
+  //#region SERVICES 
   services: {
     title: "NUESTROS SERVICIOS",
     card1: {
@@ -25,6 +35,9 @@ const texts = {
     },
     button: "Contáctanos"
   },
+  //#endregion
+
+  //#region LOCATION
   location: {
     street: "Calle Ing. Monroy 8351",
     neighborhood: "La Joya (La Gloria)",
@@ -33,9 +46,18 @@ const texts = {
     mapUrl: "https://maps.app.goo.gl/kGf95KVWaCZ7Yt797",
     button: "Ver en Maps"
   },
+  //#endregion
+
+  //#region CONTACT
+  contact: {
+    title: "CONTÁCTANOS",
+  },
+  //#endregion
+
   footer: {
     copyright: "© 2024 SuajesMC. Todos los derechos reservados.",
   },
+
 };
 
 export default texts;

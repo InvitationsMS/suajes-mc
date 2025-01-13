@@ -12,7 +12,7 @@ const Hero: React.FC<HeroProps> = () => {
 
       <div className="hero-content">
 
-        <h1>Dados de corte de alta calidad<br></br>sobre diseño</h1>
+        <h1>DADOS DE CORTE DE <b>ALTA CALIDAD</b> SOBRE DISEÑO<br></br></h1>
 
         <p>
           Fabricamos dados de corte sobre diseño, realizados con navaja de acero de alta tecnología
@@ -20,7 +20,8 @@ const Hero: React.FC<HeroProps> = () => {
           <br></br>
           Nuestra variedad está compuesta de dos tipos de corte, plano y rotativo.
         </p>
-        <a href="#services" className="btn">Ver servicios</a>
+        
+        <a href="#services" className="btn-hero">Ver servicios</a>
       </div>
 
       <div className="hero-images">
@@ -29,6 +30,9 @@ const Hero: React.FC<HeroProps> = () => {
       </div>
 
     </section>
+
+
+
   )
 }
 

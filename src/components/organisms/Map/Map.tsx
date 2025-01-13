@@ -18,7 +18,7 @@ const Map: React.FC<MapProps> = ({ latitude, longitude, zoom = 16 }) => {
 
     // Pop up
     L.marker([latitude, longitude]).addTo(map)
-      .bindPopup('<b>Suajes M.C.</b><br>I am a popup.')
+      .bindPopup('Suajes M.C.')
       .openPopup();
 
     // Zoom control

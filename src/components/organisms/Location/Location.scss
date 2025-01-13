@@ -15,12 +15,6 @@
     padding: 15px; 
   }
   
-  .map {
-    background-color: rgb(194, 194, 194);
-    width: 100%;
-    height: 100%; 
-  }
-  
   .location-text {
     line-height: 0.5;
   }
@@ -61,19 +55,11 @@
       width: 100%;
       margin-top: 10px;
     }
-  
-    .map {
-      height: 250px; /* Ajusta el tamaño del mapa en pantallas pequeñas */
-    }
   }
   
   @media (max-width: 480px) {
     .location-text {
       font-size: 14px;
-    }
-  
-    .map {
-      height: 200px; 
     }
   }
   

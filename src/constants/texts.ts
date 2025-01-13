@@ -10,7 +10,7 @@ const texts = {
     button: "Ver servicios",
   },
   services: {
-    title: "Nuestros servicios",
+    title: "NUESTROS SERVICIOS",
     card1: {
       title: "Suajes en calado láser",
       text: "Máquinas láser de alta precisión para quemado de madera plana y rotativa."

@@ -18,11 +18,12 @@ interface Contact {
 
 const contacts: Contact[] = [
   {
-    IconComponent: BsBriefcase,
-    name: "Daniel Márquez Calvillo",
-    department: "Departamento de diseño",
+    
+    IconComponent: IoDocumentTextOutline,
+    name: "Zaira Leticia Reyes Macias",
+    department: "Administradora y representante legal",
     email: "daniel.marquez.tec@gmail.com",
-    phone: "+52 664 363 3852"
+    phone: "+52 664 330 6313"
   },
   {
     IconComponent: SiAffinitydesigner,
@@ -32,11 +33,11 @@ const contacts: Contact[] = [
     phone: "+52 664 363 3852"
   },
   {
-    IconComponent: IoDocumentTextOutline,
-    name: "Daniel Márquez Calvillo",
-    department: "Departamento de diseño",
+    IconComponent: BsBriefcase,
+    name: "Zulem Márquez Calvillo",
+    department: "Gerente de ventas",
     email: "daniel.marquez.tec@gmail.com",
-    phone: "+52 664 363 2323"
+    phone: "+52 664 304 9595"
   }
 ]
 

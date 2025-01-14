@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Whatsapp.scss'
+import SendIcon from '@mui/icons-material/Send';
+import CloseIcon from '@mui/icons-material/Close';
 
 export interface WhatsappProps {
   children?: React.ReactNode
@@ -8,6 +10,7 @@ export interface WhatsappProps {
 const Whatsapp: React.FC<WhatsappProps> = () => {
   const [stateWtsp, setStateWtsp] = useState(false);
   const [hour, setHour] = useState("");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     const now = new Date()
@@ -28,8 +31,13 @@ const Whatsapp: React.FC<WhatsappProps> = () => {
 
   // API WHATSAPP
   const enviarWtsp = () => {
-    window.open("https://api.whatsapp.com/send?phone=56956732668&text=Hola%20!", "_blank");
-  }
+    const encodedMessage = encodeURIComponent(message);
+    window.open(
+      `https://api.whatsapp.com/send?phone=56956732668&text=${encodedMessage}`,
+      '_blank'
+    );
+    setMessage(''); 
+  };
 
   return (
     <>
@@ -39,29 +47,35 @@ const Whatsapp: React.FC<WhatsappProps> = () => {
           <div className="header-whatsapp">
             <div className="box-a">
               <div>
-                <img src="" alt="" className="avatar-whatsapp" />
+                <img src="/images/whats-avatar.png" alt="" className="avatar-whatsapp" />
               </div>
               <div style={{ marginLeft: "10px" }}>
-                <p className="nombre-whatsapp">SUAJES M.C.</p>
+                <p className="nombre-whatsapp">SUAJES M.C</p>
                 <p className="estado-whatsapp">En línea</p>
               </div>
-              <div style={{ marginLeft: "140px" }} className="content-icon-wtsp" onClick={() => closeChat()}>
-                <i className="bi bi-x x-icon-wtsp"></i>
+              <div className="content-icon-wtsp" onClick={() => closeChat()}>
+                <CloseIcon fontSize="small" />
               </div>
             </div>
           </div>
 
           <div className="msg-whatsapp">
-            <p style={{ fontSize: "0.9rem", fontWeight: "600" }}>SUAJES M.C.</p>
             <p style={{ fontSize: "0.9rem", marginBottom: "0px" }}>Hola 👋</p>
             <p style={{ fontSize: "0.9rem", marginTop: "0px", marginBottom: "0px" }}>¿Cuál es tu consulta?</p>
-            <p style={{ fontSize: "0.7rem", marginTop: "1px", marginLeft: "135px" }}>{hour}</p>
+            <p style={{ fontSize: "0.6rem", marginLeft: "144px", marginTop: "7px", color:"rgb(121, 121, 121)" }}>{hour}</p>
           </div>
 
           <div className="footer-whatsapp text-center">
-            <div className="btn-wtsp">
-              <p onClick={() => enviarWtsp()} className="txt-btn-wtsp" style={{ color: "white", marginTop: "0px" }}><i className="fa fa-whatsapp"></i> Iniciar</p>
-            </div>
+            <input
+              type="text"
+              placeholder="Escribe tu mensaje..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className="input-wtsp"
+            />
+            <button onClick={enviarWtsp} className="btn-send-wtsp">
+            <SendIcon fontSize="small" />
+            </button>
           </div>
 
         </div>

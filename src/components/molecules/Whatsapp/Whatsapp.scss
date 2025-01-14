@@ -1,1 +1,166 @@
-.dse-whatsapp {}
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #1109365a;
+  z-index: 100;
+}
+
+.float:hover {
+  background-color: #32b160;
+  color: rgb(236, 236, 236);
+  cursor: pointer;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+.float-chat {
+  position: fixed;
+  width: 300px;
+  height: 315px;
+  bottom: 90px;
+  right: 20px;
+  background: url("/images/bg-whatsapp.png") top left;
+  background-color: #e6ddd4;
+  border-radius: 25px;
+  font-size: 10px;
+  z-index: 100;
+}
+
+.avatar-whatsapp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-right: 0px;
+}
+
+.nombre-whatsapp {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 0px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.estado-whatsapp {
+  font-size: 0.8rem;
+  color: white;
+  margin-top: 0px;
+  font-weight:200;
+}
+
+.header-whatsapp {
+  background-color: #095e54;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: left;
+}
+
+.msg-whatsapp {
+  background-color: white;
+  border-radius: 10px;
+
+  width: 200px;
+  height: 80px;
+
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 5px;
+
+  margin-left: 20px;
+  margin-top: 20px;
+
+  text-align: left;
+}
+
+.footer-whatsapp {
+  width: 100%;
+  margin-top: 55px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-wtsp {
+  width: 250px;
+  height: 15px;
+  background-color: #25d366;
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  margin-left: 13%;
+}
+
+.btn-wtsp:hover {
+  background-color: #32b160;
+  cursor: pointer;
+}
+
+.txt-btn-wtsp {
+  font-size: 1rem;
+  color: white;
+}
+
+.txt-btn-wtsp a {
+  color: white;
+}
+
+.content-icon-wtsp {
+  color: white;
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+
+.x-icon-wtsp {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.x-icon-wtsp:hover {
+  cursor: pointer;
+  color: rgb(236, 236, 236);
+}
+
+.box-a {
+  display: flex;
+  align-items: center;
+}
+
+.input-wtsp {
+  width: 70%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+.btn-send-wtsp {
+  background-color: #095e54;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px; 
+  height: 35px; 
+  cursor: pointer;
+}
+
+.btn-send-wtsp:hover {
+  background-color: #04342f;
+}

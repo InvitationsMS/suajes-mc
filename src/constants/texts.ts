@@ -1,4 +1,5 @@
 const texts = {
+  
   //#region NAVBAR 
   navbar: {
     home: "INICIO",
@@ -11,9 +12,7 @@ const texts = {
   //#region HERO 
   hero: {
     title: "Dados de corte de alta calidad sobre diseño",
-    description: `Fabricamos dados de corte sobre diseño, realizados con navaja de acero de alta tecnología
-                    para cortar, doblar o marcar materiales blandos, dependiendo de las necesidades de nuestros clientes.
-                    Nuestra variedad está compuesta de dos tipos de corte, plano y rotativo.`,
+    description: `Fabricamos dados de corte sobre diseño, realizados con navaja de acero de alta tecnología para cortar, doblar o marcar materiales blandos, dependiendo de las necesidades de nuestros clientes. Nuestra variedad está compuesta de dos tipos de corte, plano y rotativo.`,
     button: "Ver servicios",
   },
   //#endregion
@@ -37,6 +36,14 @@ const texts = {
   },
   //#endregion
 
+  //#region ABOUT US
+  aboutUs: {
+    title: "SOBRE NOSOTROS",
+    vision: "Nuestra visión es buscar estar siempre a la vanguardia con equipo moderno para crear dados de corte con un alto nivel de calidad",
+    mision: "Nuestra misión es satisfacer las necesidades de nuestros clientes y ofrecerle la más alta relación de Costo / Beneficio"
+  },
+  //#endregion
+
   //#region LOCATION
   location: {
     street: "Calle Ing. Monroy 8351",
@@ -57,7 +64,6 @@ const texts = {
   footer: {
     copyright: "© 2024 SuajesMC. Todos los derechos reservados.",
   },
-
 };
 
 export default texts;

@@ -22,7 +22,7 @@ const contacts: Contact[] = [
     IconComponent: IoDocumentTextOutline,
     name: "Zaira Leticia Reyes Macias",
     department: "Administradora y representante legal",
-    email: "daniel.marquez.tec@gmail.com",
+    email: "lic.zairareyes@gmail.com",
     phone: "+52 664 330 6313"
   },
   {
@@ -36,7 +36,7 @@ const contacts: Contact[] = [
     IconComponent: BsBriefcase,
     name: "Zulem Márquez Calvillo",
     department: "Gerente de ventas",
-    email: "daniel.marquez.tec@gmail.com",
+    email: "zulem.marquez.c@gmail.com",
     phone: "+52 664 304 9595"
   }
 ]

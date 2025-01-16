@@ -25,7 +25,7 @@ const Information = () => {
       <section className="info-container">
         <div className="containar">
           <h1>SUAJES</h1>
-          <h2>Sub texto aqui</h2>
+          {/* <h2>Sub texto aqui</h2> */}
           <div className="info__list">
             <div className="info-card">
               <div className="info__content">

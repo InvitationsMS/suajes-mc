@@ -8,7 +8,7 @@ export interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState<string>(''); 
+  const [activeLink, ] = useState<string>(''); 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

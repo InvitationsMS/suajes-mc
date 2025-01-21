@@ -10,7 +10,7 @@ const images = [
 
 const Gallery = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [autoPlay, setAutoPlay] = useState(true);
+  const [autoPlay, ] = useState(true);
 
   useEffect(() => {
     if (autoPlay) {

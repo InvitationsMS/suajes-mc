@@ -8,6 +8,7 @@ import Information from './components/organisms/Information'
 import Location from './components/organisms/Location'
 import ContactUs from './components/organisms/ContactUs'
 import Whatsapp from './components/molecules/Whatsapp'
+import AboutUs from './components/organisms/AboutUs'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Services />
       <Information />
       <Location />
+      <AboutUs />
       <ContactUs />
     </>
   )

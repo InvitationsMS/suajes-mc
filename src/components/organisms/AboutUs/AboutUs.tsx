@@ -36,17 +36,17 @@ const AboutUs: React.FC<AboutUsProps> = () => {
   <div className="content-container-about">
     {/* Imagen al lado izquierdo */}
     <div className="image-container-about">
-      <img src="public\images\map.png" alt="Sobre nosotros" />
+      <img src="images\map.png" alt="Sobre nosotros" />
     </div>
     {/* Misión y Visión al lado derecho */}
     <div className="text-container-about">
       <div className="card-about vision-about">
-        <img src='public\images\vision2.png' width='35%'></img>
+        <img src='images\vision2.png' width='35%'></img>
         <h2>VISIÓN</h2>
         <p>Buscar estar siempre a la vanguardia con equipo moderno para crear dados de corte con un alto nivel de calidad.</p>
       </div>
       <div className="card-about mission-about">
-        <img src='public\images\mission.png' width='35%'></img>
+        <img src='images\mission.png' width='35%'></img>
         <h2>MISIÓN</h2>
         <p>Satisfacer las necesidades de nuestros clientes y ofrecer la más alta relación de Costo / Beneficio.</p>
       </div>

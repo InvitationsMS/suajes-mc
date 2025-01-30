@@ -18,8 +18,8 @@ const NavBar: React.FC<NavBarProps> = () => {
     <>
       <nav className="navbar">
         <div className="navbar-logo">
-          <img src='/images/MC.png' width={50}></img>
-          <img src='/images/logo-text.png' width={100}></img>
+          <img src='images\MC.png' width={50}></img>
+          <img src='images\logo-text.png' width={100}></img>
         </div>
         <div className="navbar-toggle" onClick={toggleMenu}>
           <div className={`line ${isOpen ? 'open' : ''}`}></div>

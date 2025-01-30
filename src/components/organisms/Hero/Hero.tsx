@@ -25,8 +25,8 @@ const Hero: React.FC<HeroProps> = () => {
       </div>
 
       <div className="hero-images">
-        <img src="/images/gallery/1.jpg" alt="Imagen principal" className="main-image" />
-        <img src="/images/gallery/2.jpg" alt="Imagen secundaria" className="secondary-image" />
+        <img src="images\gallery/1.jpg" alt="Imagen principal" className="main-image" />
+        <img src="images\gallery/2.jpg" alt="Imagen secundaria" className="secondary-image" />
       </div>
 
     </section>

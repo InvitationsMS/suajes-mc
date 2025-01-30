@@ -30,7 +30,7 @@ const Information = () => {
             <div className="info-card">
               <div className="info__content">
                 <img
-                  src="/images/img1.jpeg"
+                  src="images\img1.jpeg"
                   alt=""
                   className="info__img"
                   decoding="async"
@@ -49,7 +49,7 @@ const Information = () => {
             <div className="info-card">
               <div className="info__content">
                 <img
-                  src="/images/img2.jpeg"
+                  src="images\img2.jpeg"
                   alt=""
                   className="info__img"
                   decoding="async"

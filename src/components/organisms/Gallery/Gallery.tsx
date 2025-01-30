@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import "./Gallery.scss";
 
 const images = [
-  "/images/gallery/1.jpg",
-  "/images/gallery/2.jpg",
-  "/images/gallery/3.jpg",
-  "/images/gallery/4.jpg",
+  "images\gallery/1.jpg",
+  "images\gallery/2.jpg",
+  "images\gallery/3.jpg",
+  "images\gallery/4.jpg",
 ];
 
 const Gallery = () => {

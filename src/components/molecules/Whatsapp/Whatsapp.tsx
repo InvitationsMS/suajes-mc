@@ -47,7 +47,7 @@ const Whatsapp: React.FC<WhatsappProps> = () => {
           <div className="header-whatsapp">
             <div className="box-a">
               <div>
-                <img src="/images/whats-avatar.png" alt="" className="avatar-whatsapp" />
+                <img src="images\whats-avatar.png" alt="" className="avatar-whatsapp" />
               </div>
               <div style={{ marginLeft: "10px" }}>
                 <p className="nombre-whatsapp">SUAJES M.C</p>

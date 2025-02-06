@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import './Information.scss';
+import texts from '../../../constants/texts';
 
 const Information = () => {
   useEffect(() => {
@@ -37,7 +38,7 @@ const Information = () => {
                 />
               </div>
               <div className="info-text">
-                <h3>SUAJE PLANO</h3>
+                <h3>{texts.information.flat}</h3>
                 <p>
                   Boom length of up to 191 feet and can reach a maximum
                   freestanding height of up to approximately 223 feet. If
@@ -56,11 +57,11 @@ const Information = () => {
                 />
               </div>
               <div className="info-text">
-                <h3>SUAJE ROTATIVO</h3>
+                <h3>{texts.information.rotary}</h3>
                 <p>
-                  Boom length of up to 191 feet and can reach a maximum
-                  freestanding height of up to approximately 223 feet. If
-                  additional height is required, our cranes can be top climbed.
+                  El suaje rotativo, disponible para cilindro <strong>66, 50, 38</strong> además de variantes como <strong>355</strong> cm y otros regulares. Es para cortar, troquelar, perforar o marcar materiales mediante un sistema de cilindros rotativos.  </p>
+                <p>
+                  Estos cilindros están equipados con navajas que cortan el material a medida que este pasa por la máquina. Se utiliza ampliamente en la fabricación de <strong>empaques, etiquetas, cartón corrugado</strong> y <strong>productos de impresión</strong>, su principal ventaja es la capacidad cortar mucho material en el menor tiempo posible.
                 </p>
               </div>
             </div>

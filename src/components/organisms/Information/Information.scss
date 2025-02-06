@@ -16,11 +16,7 @@
   height: 350px;
   content: "";
   background-color: #244e7b;
-
-
   background-image: url('/images/bg-info.png');
-
-
   background-position: top center;
   background-size: cover;
   position: absolute;
@@ -28,24 +24,25 @@
   left: 0;
   z-index: -1;
 }
+
 .info__list {
-  padding: 0; // Reducir el padding general
+  padding: 0; 
   display: flex;
   flex-wrap: wrap;
-  gap: 15px; // Reducir la separación entre tarjetas
-  justify-content: center; // Centrar las tarjetas horizontalmente
+  gap: 15px; 
+  justify-content: center;
 }
 
 .info-card {
-  flex: 0 1 45%; // Reducir el ancho relativo
-  max-width: 450px; // Limitar el tamaño máximo de las tarjetas
+  flex: 0 1 45%; 
+  max-width: 450px; 
   overflow: hidden;
   box-shadow: 6px 4px 20px -3px rgba(37, 4, 72, 0.47);
   background-color: #000000e8;
   color: #FDFDFF;
 
   @media (max-width: 768px) {
-    flex: 0 1 90%; // Ocupan más ancho en pantallas pequeñas
+    flex: 0 1 90%; 
   }
 }
 
@@ -63,24 +60,24 @@
 .info__img {
   width: 100%;
   height: auto;
-  max-height: 300px; // Reducir el tamaño máximo de las imágenes
+  max-height: 300px; 
   object-fit: cover;
 }
 
 .info-text {
-  padding: 10px 25px; // Reducir padding interno de la tarjeta
-  font-size: 14px; // Tamaño más pequeño para el texto
+  padding: 10px 25px; 
+  font-size: 20px; 
   text-align: left; 
 }
 
 .info-text p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .info-container h1 {
-  font-size: 36px; // Ajustar el tamaño del encabezado si lo deseas
+  font-size: 36px; 
   color: #FDFDFF;
-  text-align: center; // Asegurar que el título esté centrado
+  text-align: center; 
 }
 
 .info-container h2 {

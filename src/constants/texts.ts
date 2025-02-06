@@ -1,5 +1,5 @@
 const texts = {
-  
+
   //#region NAVBAR 
   navbar: {
     home: "INICIO",
@@ -36,6 +36,13 @@ const texts = {
   },
   //#endregion
 
+  //#region INFORMATION
+  information: {
+    flat: "SUAJE PLANO",
+    rotary: "SUAJE ROTATIVO",
+  },
+  //#endregion
+
   //#region ABOUT US
   aboutUs: {
     title: "SOBRE NOSOTROS",
@@ -62,7 +69,7 @@ const texts = {
   //#endregion
 
   footer: {
-    copyright: "© 2024 SuajesMC. Todos los derechos reservados.",
+    copyright: "© 2025 SuajesMC. Todos los derechos reservados.",
   },
 };
 

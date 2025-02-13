@@ -33,7 +33,7 @@ const Whatsapp: React.FC<WhatsappProps> = () => {
   const enviarWtsp = () => {
     const encodedMessage = encodeURIComponent(message);
     window.open(
-      `https://api.whatsapp.com/send?phone=56956732668&text=${encodedMessage}`,
+      `https://api.whatsapp.com/send?phone=526643049595&text=${encodedMessage}`,
       '_blank'
     );
     setMessage(''); 
@@ -43,7 +43,6 @@ const Whatsapp: React.FC<WhatsappProps> = () => {
     <>
       {stateWtsp == true ? (
         <div className="float-chat">
-
           <div className="header-whatsapp">
             <div className="box-a">
               <div>
@@ -81,11 +80,9 @@ const Whatsapp: React.FC<WhatsappProps> = () => {
         </div>
       ) : (<></>)
       }
-
       <a className="float" onClick={() => openCloseChat()}>
         <i className="fa fa-whatsapp my-float"></i>
       </a>
-
     </>
   )
 }

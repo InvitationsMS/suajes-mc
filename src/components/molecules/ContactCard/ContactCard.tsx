@@ -1,8 +1,8 @@
 import React from 'react';
 import './ContactCard.scss';
 
-
 import { IconType } from 'react-icons';
+
 interface ContactCardProps {
   name: string;
   department: string;
@@ -15,19 +15,24 @@ const ContactCard: React.FC<ContactCardProps> = ({ IconComponent, name, departme
   return (
     <div className="contact-card">
       <div className='contact-card-interior'>
-
         <IconComponent size={50} color="#244E7B" />
         <div className="contact-info">
           <div className='header'>
             <h3>{name}</h3>
             <span>{department}</span>
           </div>
-          <p><i className="fa-solid fa-envelope" style={{ paddingRight: '3px' }}></i>{email}</p>
-          <p><i className="fa-solid fa-phone-flip" style={{ paddingRight: '3px' }}></i>{phone}</p>
+          <p>
+            <i className="fa-solid fa-envelope" style={{ paddingRight: '3px' }}></i>
+            <a href={`mailto:${email}`} className="email-link">{email}</a>
+          </p>
+          <p>
+            <i className="fa-solid fa-phone-flip" style={{ paddingRight: '3px' }}></i>
+            {phone}
+          </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default ContactCard
+export default ContactCard;

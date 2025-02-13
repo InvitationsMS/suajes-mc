@@ -57,6 +57,16 @@
   width: auto;
   text-align: center;
   padding: 2px 10px;
+
+  &:hover {
+    background-color: #dee4e4;
+  }
+}
+
+.email-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .contact-card-interior {

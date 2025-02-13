@@ -7,13 +7,20 @@ interface MapProps {
   zoom?: number;
 }
 
-const Map: React.FC<MapProps> = ({ latitude, longitude, zoom = 16 }) => { 
+const Map: React.FC<MapProps> = ({ latitude, longitude, zoom = 16 }) => {
   useEffect(() => {
-    const map = L.map('map', { scrollWheelZoom: false, zoomControl: false }).setView([latitude, longitude], zoom); 
+
+    const isMobile = window.innerWidth < 768;
+
+    const map = L.map('map', {
+      scrollWheelZoom: false,
+      zoomControl: false,
+      dragging: !isMobile
+    }).setView([latitude, longitude], zoom);
 
     // Map tile
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 20, 
+      maxZoom: 20,
     }).addTo(map);
 
     // Pop up

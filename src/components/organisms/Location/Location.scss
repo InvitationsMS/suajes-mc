@@ -1,85 +1,85 @@
 .location-container {
-    display: grid;
-    grid-template-columns: 1.2fr 3fr;
-    min-height: 350px;
+  display: grid;
+  grid-template-columns: 1.2fr 3fr;
+  min-height: 350px;
+}
+
+.address-section {
+  background-color: #244E7B;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 15px;
+}
+
+.location-text {
+  line-height: 0.5;
+}
+
+.p-primary {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.p-secondary {
+  font-weight: 200;
+  font-style: normal;
+}
+
+.p-tertiary {
+  font-weight: 100;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .location-container {
+    grid-template-columns: 1fr;
+    min-height: auto;
   }
-  
+
   .address-section {
-    background-color: #244E7B;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    padding: 15px; 
+    padding: 5% 5%;
+    text-align: center;
+    justify-content: flex-start;
   }
-  
+
   .location-text {
-    line-height: 0.5;
+    font-size: 16px;
+    text-align: center;
   }
-  
-  .p-primary {
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .p-secondary {
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .p-tertiary {
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  @media (max-width: 768px) {
-    .location-container {
-      grid-template-columns: 1fr;
-      min-height: auto;
-    }
-  
-    .address-section {
-      padding: 5% 5%;
-      text-align: center;
-      justify-content: flex-start;
-    }
-  
-    .location-text {
-      font-size: 16px;
-      text-align: center;
-    }
-  
-    .btn-location {
-      width: 100%;
-      margin-top: 10px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .location-text {
-      font-size: 14px;
-    }
-  }
-  
+
   .btn-location {
-    background-color: #2DAEB7;
-    color: #FDFDFF;
-    padding: 6px 20px;
-    border: none;
-    border-radius: 30px;
-    font-size: 12px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 20px;
-    align-self: center;
-    font-weight: 600;
-    max-width: 100px;
+    width: 100%;
+    margin-top: 10px;
   }
-  
-  .btn-location:hover {
-    background-color: #0E0707;
-    color: #FDFDFF;
+}
+
+@media (max-width: 480px) {
+  .location-text {
+    font-size: 14px;
   }
+}
+
+.btn-location {
+  background-color: #2DAEB7;
+  color: #FDFDFF;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+  align-self: center;
+  font-weight: 600;
+  max-width: 100px;
+}
+
+.btn-location:hover {
+  background-color: #0E0707;
+  color: #FDFDFF;
+}

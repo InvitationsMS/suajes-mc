@@ -40,9 +40,7 @@ const Information = () => {
               <div className="info-text">
                 <h3>{texts.information.flat}</h3>
                 <p>
-                  Boom length of up to 191 feet and can reach a maximum
-                  freestanding height of up to approximately 223 feet. If
-                  additional height is required, our cranes can be top climbed.
+                Suaje plano disponible para madera de 1/2, 3/4 y 5/8, además de baquelita, con calidad de láser, además de calidad manual, disponible para 2 y 3 puntos.
                 </p>
               </div>
             </div>

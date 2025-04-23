@@ -9,6 +9,8 @@
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
+
+  gap: 30px;
 }
 
   .hero-content {
@@ -20,10 +22,9 @@
   
   .hero-content h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
+    font-size: 50px;
     color: rgba(255, 255, 255, 0.844);
-    transform: scaleY(1.2); /* Estira las letras verticalmente */
-    font-weight: 400;
+    font-weight: 500;
   }
   
   .hero-content p {
@@ -45,7 +46,7 @@
   
   .main-image {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   
   .secondary-image {
@@ -53,7 +54,7 @@
     bottom: -20px;
     right: -20px;
     width: 40%;
-    border: 2px solid #fff;
+    border: 5px solid #1b1b1b;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }

@@ -30,7 +30,7 @@ const contacts: Contact[] = [
     name: "Daniel Márquez Calvillo",
     department: "Departamento de diseño",
     email: "daniel.marquez.tec@gmail.com",
-    phone: "+52 664 363 3852"
+    phone: "+52 664 363 3582"
   },
   {
     IconComponent: BsBriefcase,
